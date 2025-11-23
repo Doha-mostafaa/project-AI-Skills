@@ -1,3 +1,101 @@
 # Artwork Classification Project
 
+#  Artwork Classification Project  
+AI Skills — Deep Learning Project
+
+---
+
+ 1) About the Project  
+This project classifies different types of artworks (such as paintings, sketches, and photography) using Convolutional Neural Networks (CNNs) and Transfer Learning.
+
+We trained and evaluated multiple models, applied Grad-CAM for explainability, and built a GUI to make predictions on uploaded images.
+
+---
+
+ 2) Project Structure  
+- **data/** → Contains README with dataset instructions  
+- **gui/** → Contains the GUI app, utils, and requirements  
+- **notebooks/** → Contains Jupyter notebooks for training and evaluation  
+- **src/** → Python scripts for loading data, training models, evaluating, and GradCAM  
+- **README.md** → Main documentation  
+- **.gitignore** → Files to be ignored by GitHub  
+
+---
+
+ 3) Models Used  
+We implemented 3 CNN architectures as required:
+
+- VGG16  
+- ResNet50  
+- EfficientNetB0  
+
+Each model is trained and evaluated separately inside the `notebooks/` folder.
+
+---
+
+ 4) Evaluation  
+We evaluate all models using:
+
+- Accuracy  
+- Precision, Recall, and F1-score  
+- Confusion Matrix  
+- Grad-CAM heatmaps
+
+Full evaluation is inside:  
+`notebooks/evaluation.ipynb`
+
+---
+ 5) How to Run the GUI  
+1. Go to the `gui/` folder  
+2. Install requirements:
+
+
+
+pip install -r requirements.txt
+
+3. Run the app:
+
+
+python app.py
+
+
+The GUI allows the user to upload an image and view predictions with Grad-CAM.
+
+---
+
+ 6) Dataset  
+We use the **WikiArt Dataset**.
+
+🔗 Dataset Link:  
+https://www.kaggle.com/datasets/paultimothymooney/wikiart
+
+The dataset is NOT included in this repository due to size limitations.  
+Instructions inside `data/README.md`.
+
+---
+
+ 7) Team Members & Roles  
+- Member 1: Data Preprocessing  
+- Member 2: VGG Model  
+- Member 3: ResNet Model  
+- Member 4: EfficientNet Model  
+- Member 5: GUI Development  
+- Member 6: Evaluation & Grad-CAM  
+
+*(Replace with your real names)*
+
+---
+
+ Bonus (Optional)  
+We aim to implement one of the following:
+
+- **Artist Classification**  
+- **Multi-task Learning (style + artist)**
+
+---
+
+
+
+
+
 Project structure ready.
