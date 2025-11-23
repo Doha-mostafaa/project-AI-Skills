@@ -1,5 +1,3 @@
-# Artwork Classification Project
-
 #  Artwork Classification Project  
 AI Skills — Deep Learning Project
 
@@ -58,7 +56,6 @@ pip install -r requirements.txt
 
 python app.py
 
-
 The GUI allows the user to upload an image and view predictions with Grad-CAM.
 
 ---
@@ -67,10 +64,7 @@ The GUI allows the user to upload an image and view predictions with Grad-CAM.
 We use the **WikiArt Dataset**.
 
 🔗 Dataset Link:  
-https://www.kaggle.com/datasets/paultimothymooney/wikiart
-
-The dataset is NOT included in this repository due to size limitations.  
-Instructions inside `data/README.md`.
+(https://www.kaggle.com/datasets/steubk/wikiart/data)
 
 ---
 
@@ -82,7 +76,6 @@ Instructions inside `data/README.md`.
 - Member 5: GUI Development  
 - Member 6: Evaluation & Grad-CAM  
 
-*(Replace with your real names)*
 
 ---
 
