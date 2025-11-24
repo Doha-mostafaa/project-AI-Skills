@@ -74,7 +74,8 @@ We use the **WikiArt Dataset**.
 - Member 3: ResNet50 Training  
 - Member 4: EfficientNetB0 Training  
 - Member 5: Evaluation & Grad-CAM  
-- Member 6: GUI Development 
+- Member 6: GUI Development
+- Member 3 + Member 4 (shared task => BONUS — Multitask Model)
 
 
 ---
