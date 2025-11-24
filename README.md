@@ -69,12 +69,12 @@ We use the **WikiArt Dataset**.
 ---
 
  7) Team Members & Roles  
-- Member 1: Data Preprocessing  
-- Member 2: VGG Model  
-- Member 3: ResNet Model  
-- Member 4: EfficientNet Model  
-- Member 5: GUI Development  
-- Member 6: Evaluation & Grad-CAM  
+- Member 1: Data & Preprocessing  
+- Member 2: VGG16 Training  
+- Member 3: ResNet50 Training  
+- Member 4: EfficientNetB0 Training  
+- Member 5: Evaluation & Grad-CAM  
+- Member 6: GUI Development 
 
 
 ---
@@ -85,6 +85,24 @@ We added an additional model for Artist Classification.
 Notebook:
 `notebooks/multitask_model.ipynb`
 
+
+
+**Project tree**
+
+project/
+│── data/
+│── gui/
+│   ├── app.py
+│   ├── utils.py
+│   └── requirements.txt
+│── notebooks/
+│── src/
+│   ├── train.py
+│   ├── evaluate.py
+│   ├── data_loader.py
+│   └── gradcam.py
+│── .gitignore
+└── README.md
 
 ---
 
