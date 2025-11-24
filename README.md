@@ -87,27 +87,5 @@ Notebook:
 
 
 
-**Project tree**
-
-project/
-│── data/
-│── gui/
-│   ├── app.py
-│   ├── utils.py
-│   └── requirements.txt
-│── notebooks/
-│── src/
-│   ├── train.py
-│   ├── evaluate.py
-│   ├── data_loader.py
-│   └── gradcam.py
-│── .gitignore
-└── README.md
-
----
-
-
-
-
 
 Project structure ready.
