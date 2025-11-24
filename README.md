@@ -1,5 +1,4 @@
 #  Artwork Classification Project  
-AI Skills — Deep Learning Project
 
 ---
 
