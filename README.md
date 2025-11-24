@@ -80,10 +80,11 @@ We use the **WikiArt Dataset**.
 ---
 
  Bonus (Optional)  
-We aim to implement one of the following:
+We added an additional model for Artist Classification.
 
-- **Artist Classification**  
-- **Multi-task Learning (style + artist)**
+Notebook:
+`notebooks/multitask_model.ipynb`
+
 
 ---
 
