@@ -1,91 +1,92 @@
-#  Artwork Classification Project  
+# Artwork Style & Artist Classification using Deep Learning
+
+An end-to-end AI project that predicts the **art style** and **artist** of an artwork image using **Deep Learning with PyTorch**.  
+The system supports image upload through a **GUI**, provides predictions, and explains model decisions using **Grad-CAM**.
 
 ---
 
- 1) About the Project  
-This project classifies different types of artworks (such as paintings, sketches, and photography) using Convolutional Neural Networks (CNNs) and Transfer Learning.
+## Project Overview
 
-We trained and evaluated multiple models, applied Grad-CAM for explainability, and built a GUI to make predictions on uploaded images.
-
----
-
- 2) Project Structure  
-- **data/** → Contains README with dataset instructions  
-- **gui/** → Contains the GUI app, utils, and requirements  
-- **notebooks/** → Contains Jupyter notebooks for training and evaluation  
-- **src/** → Python scripts for loading data, training models, evaluating, and GradCAM  
-- **README.md** → Main documentation  
-- **.gitignore** → Files to be ignored by GitHub  
+This project aims to build a real-world **Computer Vision** application that:
+- Classifies artwork images by **Style** and **Artist**
+- Handles a **large-scale dataset (~33GB)**
+- Compares **3 different CNN-based models**
+- Provides **model explainability** using Grad-CAM
+- Offers a **user-friendly GUI** for easy interaction
 
 ---
 
- 3) Models Used  
-We implemented 3 CNN architectures as required:
+## Key Features
 
-- VGG16  
-- ResNet50  
-- EfficientNetB0  
-
-Each model is trained and evaluated separately inside the `notebooks/` folder.
-
----
-
- 4) Evaluation  
-We evaluate all models using:
-
-- Accuracy  
-- Precision, Recall, and F1-score  
-- Confusion Matrix  
-- Grad-CAM heatmaps
-
-Full evaluation is inside:  
-`notebooks/evaluation.ipynb`
-
----
- 5) How to Run the GUI  
-1. Go to the `gui/` folder  
-2. Install requirements:
-
-
-
-pip install -r requirements.txt
-
-3. Run the app:
-
-
-python app.py
-
-The GUI allows the user to upload an image and view predictions with Grad-CAM.
+✔ Trained **3 Deep Learning models** using PyTorch  
+✔ Large dataset preprocessing & handling (~33GB)  
+✔ GUI for image upload & real-time prediction  
+✔ Model evaluation (Accuracy, Confusion Matrix, etc.)  
+✔ Explainable AI using **Grad-CAM heatmaps**  
 
 ---
 
- 6) Dataset  
-We use the **WikiArt Dataset**.
+## Tech Stack
 
-🔗 Dataset Link:  
-(https://www.kaggle.com/datasets/steubk/wikiart/data)
-
----
-
- 7) Team Members & Roles  
-- Member 1: Data & Preprocessing  
-- Member 2: VGG16 Training  
-- Member 3: ResNet50 Training  
-- Member 4: EfficientNetB0 Training  
-- Member 5: Evaluation & Grad-CAM  
-- Member 6: GUI Development
-- Member 3 + Member 4 (shared task => BONUS — Multitask Model)
-
+- **Python**
+- **PyTorch**
+- **Torchvision**
+- **OpenCV**
+- **NumPy & Pandas**
+- **Matplotlib**
+- **Grad-CAM**
+- **GUI Framework (streamlit)**
 
 ---
 
- Bonus (Optional)  
-We added an additional model for Artist Classification.
+## Dataset
 
-Notebook:
-`notebooks/multitask_model.ipynb`
+- Size: **~33 GB**
+- Type: Artwork images
+- Classes:
+  - Multiple **Art Styles**
+  - Multiple **Artists**
 
+> Due to size limitations, the dataset is not uploaded to GitHub.
+- link of dataset-->
+- https://www.kaggle.com/datasets/steubk/wikiart
+---
 
+## Models Used
+
+We implemented and evaluated **3 CNN-based models (efficientb0, resnet50, vgg16)**, comparing their performance in terms of:
+- Accuracy
+- Generalization
+- Interpretability
+
+---
+
+## Evaluation
+
+Evaluation techniques used:
+- Accuracy
+- Precision & Recall
+- Confusion Matrix
+- Visual interpretation with **Grad-CAM**
+
+---
+
+## Explainability (Grad-CAM)
+
+Grad-CAM was used to visualize the important regions in the artwork that influenced the model’s predictions, improving:
+- Transparency
+- Trustworthiness
+- Model understanding
+
+---
+
+## GUI Demo
+
+The GUI allows users to:
+1. Upload an artwork image
+2. Predict its **Style**
+3. Visualize Grad-CAM results
+---
 
 
 Project structure ready.
